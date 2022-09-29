@@ -9,11 +9,11 @@ import "react-datepicker/dist/react-datepicker.css";
 function Scrollcards(props) {
   const [startDate, setStartDate] = useState(new Date());
 
-  const { title } = props;
+  const { title, sidebar } = props;
   return (
-    <div>
-      <div className="flow-root w-90 my-6">
-        <div className="float-left text-xl ml-4">
+    <div className="w-full">
+      <div className="flow-root my-6">
+        <div className="float-left text-xl pl-4">
           <h1>{title}</h1>
         </div>
         <div className="float-right flex text-center">
@@ -57,7 +57,7 @@ function Scrollcards(props) {
           </span>
         </div>
       </div>
-      <div className="overflow-scroll scrollbar-hide h-72">
+      <div className="overflow-scroll scrollbar-hide h-[55%]">
         <Card />
         <br></br>
         <Card />

@@ -7,7 +7,7 @@ function Card() {
     setCheck(!check);
   };
   return (
-    <div className="card w-82 bg-slate-50 shadow-xl mx-2">
+    <div className="card w-full bg-slate-50 shadow-xl mx-2">
       <div className="card-body">
         <h2 className="card-title">Card title!</h2>
         <p>to completet the react as well as nextjs </p>
@@ -21,7 +21,7 @@ function Card() {
             type="checkbox"
             checked={check}
             className="checkbox checkbox-xs"
-            onClick={handleSetCheck}
+            onChange={handleSetCheck}
           />
         </div>
       </div>

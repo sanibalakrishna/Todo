@@ -3,7 +3,7 @@ import { BsPlusLg } from "react-icons/bs";
 
 function Navbarnext() {
   return (
-    <div className="navbar bg-base-200 rounded-md  pr-4">
+    <div className="navbar bg-base-200 rounded-md  pr-4 w-full">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">

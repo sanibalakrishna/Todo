@@ -2,17 +2,23 @@ import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 import { FaRegShareSquare } from "react-icons/fa";
+import { BsArrowLeft } from "react-icons/bs";
 import Avatar from "../components/Avatar";
 
-function Navbar() {
+function Navbar({ onsidebar, sidebar }) {
   const [text, setText] = useState("");
   const handleOnChange = (e) => {
     setText(e.target.value);
   };
   return (
-    <div className="navbar bg-base-100  rounded-lg pr-4 ">
+    <div className="navbar bg-base-100  rounded-lg pr-4  w-full">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">Todo App</a>
+        <button
+          className="btn btn-ghost normal-case text-xl"
+          onClick={onsidebar}
+        >
+          {sidebar ? <BsArrowLeft className="ml-4" /> : "Todo-X"}
+        </button>
       </div>
       <div className="flex-1 justify-evenly">
         <Avatar />
